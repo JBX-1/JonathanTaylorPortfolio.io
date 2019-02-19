@@ -1,4 +1,4 @@
-/* HOME PAGE*/
+/* Landing PAGE*/
 #home-bg {
     background: linear-gradient(10deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, .9)), url("../images/IMG_3820.JPG");
     height: 100%; 
@@ -10,7 +10,7 @@
 }
 
 /* Profile Image on Home Page */
-.centerPage {
+/* .centerPage {
     top: 5%;
     left: 5%;
     position: absolute;
@@ -30,7 +30,7 @@
     left: -20;
     top: 0;
     float: right;
-}
+} */
 /* .pageImage {
     margin: 17% 10% 27% -87%;
     width: 80%;
@@ -66,7 +66,7 @@
     margin-top: 10%;
     height: 24%;
 } */
-.char {
+/* .char {
     position: relative;
     display: inline-block;
     visibility: inherit;
@@ -78,12 +78,12 @@
     margin-bottom: 35px;
     white-space: nowrap;
     overflow: hidden;
-}
-.charo {
+} */
+/* .charo {
     text-align: left;
-}
+} */
 /* Left side word */
-.charo {
+/* .charo {
     left: 10%;
     opacity: 0;
     -webkit-animation: type 3s steps(50) 1;
@@ -92,9 +92,9 @@
     animation-fill-mode: forwards;
     animation-delay: .5s;
     -webkit-animation-delay: .5s;
-}
+} */
 /* TypeWriter Animation Keyframes */
-@-webkit-keyframes type {
+/* @-webkit-keyframes type {
     0% {
         width: 0;
         opacity: 0;
@@ -108,7 +108,7 @@
         width: 100%;
         opacity: 1;
     }
-}
+} */
 /* @-webkit-keyframes type2 {
     0% {
         width: 0;
@@ -124,7 +124,7 @@
 } */
 /* Slide Down Animation For Profile Image */
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
 	0% {
 		transform: scale(0);
 		opacity: 0.0;		
@@ -211,9 +211,12 @@
 	100% {
         -webkit-transform: translateY(0%);
         opacity: 1;
-	}	
-}
-/* Navbar styling */
+	}	 
+ } */
+ /* -------------------------------------------- end ---------------------------------------- */
+
+
+/* ----------------------- Navbar styling ----------------------------- */
 .nav {
     /* background-color: rgb(170, 159, 4); */
     background-color: transparent;
@@ -313,7 +316,10 @@
     text-align: center;
     top: 86%  !important;
 };
-/* PAGE CONTENT */
+/* -------------------------------------- end -----------------------------------------  */
+
+
+/* --------------------------------- PAGE CONTENT --------------------------- */
 
 #content1 {
     /* position: absolute; */
@@ -392,41 +398,7 @@
     to {right: 500px;}
   } */
 
-
-
-
-
-            /* ABOUT ME*/
-
-/* CONTENT */
-#jets {
-    /* background-color: black;
-    margin: 0;
-    padding: 0;
-    background-size: cover; */
-    margin: 0;
-    padding: 0;
-    /* background: url(images/IMG_3820.jpg) no-repeat; */
-    background-color: #2b005ce0;
-    background: linear-gradient(10deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, .9)), url("https://thenypost.files.wordpress.com/2017/09/kobe-3.jpg?quality=90&strip=all&w=618&h=410&crop=1");
-    background-size: cover;
-}
-#panthers {
-    color: white;
-    font-size: 50px;
-    text-align: center;
-}
-.cont1 {
-    background-color: black;
-    font-family: "cabin sketch";
-}
-.container{
-    /* background-color: black; */
-    color: rgb(70, 2, 102);
-    font-size: 25px;
-
-}
-/* CONTAINER*/
+  /*------------ ABOUT ME -----------*/
 
 .box {
     width: 50%;
@@ -460,21 +432,13 @@
     font-family: 'cabin sketch';
     font-size: 15px;
 }
+/* ------------------------------ end ------------------------------------- */
 
 /* SKILLS */
-
-#skillsPage {
-    box-sizing: border-box;
-    background: linear-gradient(10deg,rgba(48, 2, 85, 0.7),rgba(168, 125, 4, 0.9));
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-
-}
 #technologies {
     box-sizing: border-box;
     text-align: center;
     margin: auto;
     margin-top: 2%;
     color:gold;
-    
 }
