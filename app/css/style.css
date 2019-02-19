@@ -1,0 +1,480 @@
+/* HOME PAGE*/
+#home-bg {
+    background: linear-gradient(10deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, .9)), url("images/IMG_3820.JPG");
+    height: 100%; 
+    /* background-color: #050504; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+/* Profile Image on Home Page */
+.centerPage {
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    width: 90%;
+    height: 93%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pageHomeLeft {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-top: 9%;
+}
+#pictureContainer {
+    left: -20;
+    top: 0;
+    float: right;
+}
+.pageImage {
+    margin: 17% 10% 27% -87%;
+    width: 80%;
+    height: 0;
+    float: left;
+    position: initial;
+    right: 0;
+    top: 0;
+    background: url("images/0.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px #cfbb05 !important;
+    padding-bottom: 80%;
+    
+   
+    /* Slide Down Effect */
+    opacity: 0;
+    animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;	
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;	
+    animation-delay: 3.5s;
+    -webkit-animation-delay: 3.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+}
+/* .pageHomeRight {
+    text-align: left;
+    float: left;
+    margin-top: 10%;
+    height: 24%;
+} */
+.char {
+    position: relative;
+    display: inline-block;
+    visibility: inherit;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 35px;
+    font-family: "Cabin Sketch"; 
+    color: #fcfcfc;
+    margin-bottom: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.charo {
+    text-align: left;
+}
+/* Left side word */
+.charo {
+    left: 10%;
+    opacity: 0;
+    -webkit-animation: type 3s steps(50) 1;
+    animation: type 2s steps(50) 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+}
+/* TypeWriter Animation Keyframes */
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    99.9% {
+        border-right: .15em #5eff00;
+        opacity: 1;
+    }
+    100% {
+        border: none;
+        width: 100%;
+        opacity: 1;
+    }
+}
+/* @-webkit-keyframes type2 {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    99.9% {
+        border-right: .15em #00ffea;
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+/* Slide Down Animation For Profile Image */
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@keyframes slideDown {
+	0% {
+        transform: translateY(-100%);
+        opacity: 0;
+	}
+	50%{
+        transform: translateY(8%);
+        opacity: 1;
+	}
+	65%{
+        transform: translateY(-4%);
+        opacity: 1;
+	}
+	80%{
+        transform: translateY(4%);
+        opacity: 1;
+	}
+	95%{
+        transform: translateY(-2%);
+        opacity: 1;
+	}			
+	100% {
+        transform: translateY(0%);
+        opacity: 1;
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+        -webkit-transform: translateY(-100%);
+        opacity: 0;
+	}
+	50%{
+        -webkit-transform: translateY(8%);
+        opacity: 1;
+	}
+	65%{
+        -webkit-transform: translateY(-4%);
+        opacity: 1;
+	}
+	80%{
+        -webkit-transform: translateY(4%);
+        opacity: 1;
+	}
+	95%{
+        -webkit-transform: translateY(-2%);
+        opacity: 1;
+	}			
+	100% {
+        -webkit-transform: translateY(0%);
+        opacity: 1;
+	}	
+}
+/* Navbar styling */
+.nav {
+    /* background-color: rgb(170, 159, 4); */
+    background-color: transparent;
+    display: block;
+    width: 58px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.nav a {
+   display: block;
+   width: 55px; 
+}
+/* Full list of icons */
+.logo {
+    top: 0%;
+    left: 0%;
+}
+#siteLogo {
+    width: 55px;
+    height: 99px;
+    padding-left: 4px;
+}
+.nav ul { 
+    margin: 0;
+    padding: 0;
+    top: 33%;
+    position: absolute;
+}
+.nav li {
+    font-size:12pt;
+    display:block;
+    height:60px;
+    width:55px;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+.nav .home {
+    background-color: rgb(67, 7, 102);
+    text-align: center;
+    border-radius: 25%;
+}
+.nav .about {
+    /* background-color: rgb(10, 10, 10); */
+    background-color: transparent;
+    text-align: center;
+}
+.nav .skills {
+    /* background-color: rgb(10, 10, 10); */
+    background-color: transparent;
+    text-align: center;
+}
+.nav .projects {
+    /* background-color: rgb(10, 10, 10); */
+    background-color: transparent;
+    text-align: center;
+}
+.nav .contact {
+    /* background-color: rgb(10, 10, 10); */
+    background-color: transparent;
+   text-align: center;
+}
+.nav li a {
+    font-family: "Cabin Sketch";
+    color:#eee;
+    font-size:26px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+/* .nav li i {
+    padding-top: 7px;
+    color: #edf3f3;
+} */
+.nav li b {
+    font-size: 10px;
+    display: none;
+    padding-top: 15px;
+    padding-bottom: 7.5px;
+    font-family: "Cabin Sketch";
+}
+.nav a:hover {
+    color: #ffffff;
+}
+.nav a:hover i {
+    display: none;
+}
+.nav a:hover b {
+    display: block;
+}
+/* Links */
+.links {
+    text-align: center;
+    top: 86%  !important;
+};
+/* PAGE CONTENT */
+
+#content1 {
+    /* position: absolute; */
+    width: 700px;
+    min-height: 550px;
+    height: auto;
+    right: 0%;
+    top: 10%;
+    /* background-color: red; */
+}
+
+.aboutus {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    bottom: 10px;
+    color: white;
+    font-family: century gothic;
+    padding: 0 60px;
+    display: none;
+    /* background-color: red; */
+}
+.gallery {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: white;
+    padding: 0 60px;
+    display: none;
+    /* background-color: #c09d00; */
+    margin: 10%;
+}
+.gallery .image{
+    width: 31%;
+    height: 31%;
+    margin: 1%;
+    float: left;
+}
+.image img {
+    width: 100%;
+    transition: all ease 0.5s;
+    -webkit-transition: 0.5s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+.image img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+.homeContent {
+    /* position: center; */
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    /* margin: right; */
+    color: white;
+    font-family: Verdana;
+    text-transform: uppercase;
+    /* background-color: red; */
+    /* -webkit-animation: mymove 5s infinite;
+    -webkit-animation-delay: 2s;  */
+} 
+.homeContent h3 {
+    font-size: 13px;
+    padding-right: 50px;
+    border-bottom: 1px solid white;
+    margin: 35%;
+}
+/* .homeContent h1 {
+    font-size: 28px;
+    padding: 5px 0;
+    opacity: 0.6;
+} */
+/* @keyframes mymove {
+    from {left: 200px;}
+    to {right: 500px;}
+  } */
+
+
+
+
+
+            /* ABOUT ME*/
+
+/* CONTENT */
+#jets {
+    /* background-color: black;
+    margin: 0;
+    padding: 0;
+    background-size: cover; */
+    margin: 0;
+    padding: 0;
+    /* background: url(images/IMG_3820.jpg) no-repeat; */
+    background-color: #2b005ce0;
+    background: linear-gradient(10deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, .9)), url("https://thenypost.files.wordpress.com/2017/09/kobe-3.jpg?quality=90&strip=all&w=618&h=410&crop=1");
+    background-size: cover;
+}
+#panthers {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.cont1 {
+    background-color: black;
+    font-family: "cabin sketch";
+}
+.container{
+    /* background-color: black; */
+    color: rgb(70, 2, 102);
+    font-size: 25px;
+
+}
+/* CONTAINER*/
+
+.box {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 40px;
+    border-radius: 5%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    color: white;
+    font-family: 'cabin sketch';
+    
+}
+.box-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.box p{
+    text-align: justify;
+    font-family: 'cabin sketch';
+    font-size: 15px;
+}
+
+/* SKILLS */
+
+#skillsPage {
+    box-sizing: border-box;
+    background: linear-gradient(10deg,rgba(48, 2, 85, 0.7),rgba(168, 125, 4, 0.9));
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+
+}
+#technologies {
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    color:gold;
+    
+}
