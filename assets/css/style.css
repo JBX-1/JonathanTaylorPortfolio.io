@@ -1,8 +1,8 @@
 /* HOME PAGE*/
 #home-bg {
-    background: linear-gradient(10deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, .9)), url("images/IMG_3820.JPG");
+    background: linear-gradient(10deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, .9)), url("../images/IMG_3820.JPG");
     height: 100%; 
-    /* background-color: #050504; */
+    background-color: #050504;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,7 @@
     top: 0;
     float: right;
 }
-.pageImage {
+/* .pageImage {
     margin: 17% 10% 27% -87%;
     width: 80%;
     height: 0;
@@ -47,7 +47,7 @@
     
    
     /* Slide Down Effect */
-    opacity: 0;
+    /* opacity: 0;
     animation-name: slideDown;
 	-webkit-animation-name: slideDown;	
 	animation-duration: 2s;	
@@ -59,7 +59,7 @@
     -webkit-animation-delay: 3.5s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; 
-}
+} */
 /* .pageHomeRight {
     text-align: left;
     float: left;
